@@ -759,25 +759,40 @@ body {
   position: relative;
   width: col(18);
   
-  .icon{
+  .ico{
     position: absolute;
     z-index: -1;
     right: -30%;
     top: 10%;
+
+    &.ico2{
+      top: 0;
+      left: -30%;
+    }
   }
   .premios{
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: col(16);
+
     margin: 100px auto 0 auto;
+    @media screen and (max-width: $md) {
+      flex-direction: column;
+    }
     .right{
       width: col(8);
+      @media screen and (max-width: $md) {
+        width: col(18);
+      }
       >p{
         max-width: 560px;
       }
       p,h2{
         color: $white;
+        @media screen and (max-width: $md) {
+          color: $darkgray;
+        }
       }
       .bottom{
         margin-top: 50px;
@@ -799,6 +814,9 @@ body {
   .team{
     width: col(14);
     margin: 150px auto 0 auto;
+    @media screen and (max-width: $md) {
+      width: col(18);
+    }
     .texto{
       text-align: center;
       p{
@@ -808,11 +826,14 @@ body {
       }
     }
     .team-container{
+      position: relative;
       display: grid;
       grid-gap: 50px;
       grid-template-columns: repeat(3, 1fr);
+      padding-bottom: col(4);
       @media screen and (max-width: $md) {
         grid-template-columns: repeat(2, 1fr);
+        padding-bottom: col(1);
       }
       .person{
         img{
@@ -827,7 +848,7 @@ body {
 .contacto {
   width: col(16);
   //margin: 100px auto 100px auto;
-  margin: col(1);
+  margin: col(1) col(1) col(1) col(1);
   display: flex;
   align-items: center;
   justify-content: space-around;
