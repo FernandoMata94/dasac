@@ -965,16 +965,19 @@ body {
   width: 100%;
 }
 
-.section-container .ico {
+.section-container .heart svg {
   position: absolute;
   z-index: -1;
-  left: -40%;
+  left: -50%;
   top: 0%;
 }
 
 .section-container .ico.ico2 {
+  position: absolute;
+  z-index: -1;
   top: 0;
-  left: -30%;
+  right: -30%;
+  width: 80%;
 }
 
 .section-container .premios {
@@ -987,7 +990,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 88.88889%;
+  width: 77.77778%;
   margin: 100px auto 0 auto;
 }
 
@@ -1000,8 +1003,34 @@ body {
   }
 }
 
+.section-container .premios .left {
+  width: 50%;
+}
+
+.section-container .premios .left img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  .section-container .premios .left {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-container .premios .left {
+    width: 100%;
+  }
+}
+
 .section-container .premios .right {
   width: 44.44444%;
+}
+
+@media screen and (max-width: 1600px) {
+  .section-container .premios .right {
+    width: 44.44444%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -1030,7 +1059,13 @@ body {
 }
 
 .section-container .premios .right p, .section-container .premios .right h2 {
-  color: #1D1D1B;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1400px) {
+  .section-container .premios .right p, .section-container .premios .right h2 {
+    color: #1D1D1B;
+  }
 }
 
 .section-container .team {
