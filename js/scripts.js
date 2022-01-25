@@ -136,7 +136,7 @@ let masks = document.querySelectorAll('.mask');
     let tl = gsap.timeline({
       scrollTrigger:{
         trigger: mask,
-        toggleActions:"restart none none reset",
+        toggleActions:"restart none none reverse",
         start:"top 80%",
         //markers:true
       }

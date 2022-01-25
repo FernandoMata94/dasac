@@ -621,7 +621,7 @@ body {
   width: 50%;
   background-color: #223869;
   padding: 5.55556%;
-  height: 550px;
+  height: 600px;
   border-radius: 0 0 0 20px;
   -webkit-box-shadow: 0px 0px 30px 5px rgba(107, 107, 107, 0.81);
           box-shadow: 0px 0px 30px 5px rgba(107, 107, 107, 0.81);
@@ -637,6 +637,10 @@ body {
 
 .proyectos .slider-projects .slidep .left p, .proyectos .slider-projects .slidep .left h3, .proyectos .slider-projects .slidep .left h1 {
   color: #ffffff;
+}
+
+.proyectos .slider-projects .slidep .left .lastp {
+  margin-top: 25px;
 }
 
 .proyectos .slider-projects .slidep .left h3 {
@@ -1178,6 +1182,23 @@ body {
   margin-left: 0;
 }
 
+.contacto .left .red {
+  margin: 50px 0 0 0;
+  width: 50px;
+}
+
+.contacto .left .red svg path {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  fill: #223869;
+}
+
+.contacto .left .red svg:hover path {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  fill: #5BA2D4;
+}
+
 @media screen and (max-width: 1200px) {
   .contacto .right {
     width: 50%;
@@ -1341,133 +1362,6 @@ body {
 }
 
 /********************* Contacto ****************/
-.contacto1 {
-  width: 88.88889%;
-  margin: 5.55556%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-@media screen and (max-width: 1200px) {
-  .contacto1 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100%;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .contacto1 {
-    padding: 5.55556%;
-  }
-}
-
-.contacto1 .left {
-  width: 50%;
-}
-
-@media screen and (max-width: 1200px) {
-  .contacto1 .left {
-    width: 100%;
-  }
-}
-
-.contacto1 .left h1 {
-  margin-bottom: 50px;
-}
-
-@media screen and (max-width: 850px) {
-  .contacto1 .left h1 {
-    margin-top: 50px;
-  }
-}
-
-.contacto1 .right {
-  width: 38.88889%;
-}
-
-@media screen and (max-width: 1400px) {
-  .contacto1 .right {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .contacto1 .right {
-    width: 100%;
-  }
-}
-
-.contacto1 .right .info {
-  background-color: #5BA2D4;
-  padding: 50px;
-  border-radius: 55px 55px 55px 0;
-}
-
-@media screen and (max-width: 1200px) {
-  .contacto1 .right .info {
-    border-radius: 0;
-  }
-}
-
-.contacto1 .right .info > div {
-  margin-bottom: 25px;
-}
-
-.contacto1 .right .info h2,
-.contacto1 .right .info p {
-  color: #262580;
-}
-
-.contacto1 .right .info p {
-  word-break: break-all;
-}
-
-.contacto1 .right .info .border {
-  border-bottom: solid 1px #262580;
-  padding-bottom: 25px;
-}
-
-.contacto1 .right .info h2 {
-  padding-bottom: 25px;
-  text-transform: initial;
-  border-bottom: solid 1px #262580;
-}
-
-.contacto1 .right .info .redes {
-  margin-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contacto1 .right .info .redes .red {
-  margin-right: 25px;
-  width: 40px;
-}
-
-.contacto1 .right .info .redes .red svg path {
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  fill: #262580;
-}
-
-.contacto1 .right .info .redes .red svg:hover path {
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  fill: #1D1D1B;
-}
-
 footer {
   width: 100%;
   background-color: #223869;

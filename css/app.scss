@@ -533,7 +533,7 @@ body {
         width: col(9);
         background-color: $blue;
         padding: col(1);
-        height: 550px;
+        height: 600px;
         border-radius: 0 0 0 20px;
         box-shadow: 0px 0px 30px 5px rgba(107,107,107,0.81);
         position: relative;
@@ -543,6 +543,9 @@ body {
         }
         p,h3,h1{
           color: $white;
+        }
+        .lastp{
+          margin-top: 25px;
         }
         h3{
           max-width: 450px;
@@ -925,6 +928,22 @@ body {
         margin-left: 0;
       }
     }
+    .red {
+      margin: 50px 0 0 0;
+      width: 50px;
+      svg {
+        path {
+          transition: all 0.3s ease;
+          fill: $blue;
+        }
+        &:hover {
+          path {
+            transition: all 0.3s ease-out;
+            fill: $clearblue;
+          }
+        }
+      }
+    }
   }
   .right {
     @media screen and (max-width: $lg) {
@@ -1041,91 +1060,6 @@ body {
 }
 
 /********************* Contacto ****************/
-
-.contacto1 {
-  width: col(16);
-  margin: col(1);
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  @media screen and (max-width: $lg) {
-    flex-direction: column;
-    width: col(18);
-    margin: 0;
-  }
-  @media screen and (max-width: $md) {
-    padding: col(1);
-  }
-  .left {
-    width: col(9);
-    @media screen and (max-width: $lg) {
-      width: col(18);
-    }
-    h1 {
-      margin-bottom: 50px;
-      @media screen and (max-width: $md) {
-        margin-top: 50px;
-      }
-    }
-  }
-  .right {
-    width: col(7);
-    @media screen and (max-width: $lap) {
-      width: col(9);
-    }
-    @media screen and (max-width: $lg) {
-      width: col(18);
-    }
-    .info {
-      background-color: $clearblue;
-      padding: 50px;
-      border-radius: 55px 55px 55px 0;
-      @media screen and (max-width: $lg) {
-        border-radius: 0;
-      }
-      > div {
-        margin-bottom: 25px;
-      }
-      h2,
-      p {
-        color: $purple;
-       
-      }
-      p{
-        word-break: break-all;
-      }
-      .border {
-        border-bottom: solid 1px $purple;
-        padding-bottom: 25px;
-      }
-      h2 {
-        padding-bottom: 25px;
-        text-transform: initial;
-        border-bottom: solid 1px $purple;
-      }
-      .redes {
-        margin-top: 25px;
-        display: flex;
-        .red {
-          margin-right: 25px;
-          width: 40px;
-          svg {
-            path {
-              transition: all 0.3s ease;
-              fill: $purple;
-            }
-            &:hover {
-              path {
-                transition: all 0.3s ease-out;
-                fill: $darkgray;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
 
 footer {
   width: col(18);
