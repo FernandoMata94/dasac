@@ -25,6 +25,12 @@ h1 {
   letter-spacing: 1px;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2.125rem;
+  }
+}
+
 @media screen and (max-width: 850px) {
   h1 {
     font-size: 1.75rem;
@@ -279,11 +285,11 @@ body {
 }
 
 .nav.activo .inner .right p:after {
-  background: #1D1D1B;
+  background: #223869;
 }
 
 .nav.activo .inner .right p:hover:before {
-  background: #1D1D1B;
+  background: #223869;
 }
 
 .nav.activo .inner .right p:hover:after {
@@ -393,16 +399,12 @@ body {
 .menu {
   background-color: #5BA2D4;
   position: fixed;
-  left: 0%;
+  right: -60%;
   top: 0%;
   z-index: 99998;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   z-index: 99998;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  -webkit-transform: scale(0, 1);
-          transform: scale(0, 1);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   display: -webkit-box;
@@ -417,8 +419,7 @@ body {
 }
 
 .menu.active {
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  right: 0%;
   -webkit-transform: scale(1, 1);
           transform: scale(1, 1);
 }
@@ -439,7 +440,7 @@ body {
   font-family: "metropolis";
   font-size: 1.5rem;
   letter-spacing: 3px;
-  color: #262580;
+  color: #ffffff;
   margin: 0;
   font-weight: normal;
   letter-spacing: 1px;
@@ -478,6 +479,12 @@ body {
   margin: auto;
   margin-left: 5.55556%;
   height: 150px;
+}
+
+@media screen and (max-width: 850px) {
+  .slider-home .slider .cont {
+    width: 100%;
+  }
 }
 
 .slider-home .slider h1 {
@@ -568,6 +575,8 @@ body {
     right: 0;
     background-color: #223869;
     width: 130px;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
   }
 }
 
@@ -649,6 +658,10 @@ body {
   width: 50%;
 }
 
+.proyectos .slider-projects .slidep .right img {
+  width: 100%;
+}
+
 @media screen and (max-width: 1200px) {
   .proyectos .slider-projects .slidep .right {
     width: 100%;
@@ -669,6 +682,13 @@ body {
 .directivos h2.title {
   margin-bottom: 50px;
   margin-left: 15px;
+}
+
+@media screen and (max-width: 850px) {
+  .directivos h2.title {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -878,8 +898,8 @@ body {
 .universidades .cont {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media screen and (max-width: 850px) {
@@ -932,6 +952,13 @@ body {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1200px) {
+  .separador h1 {
+    width: auto;
+    text-align: center;
+  }
+}
+
 .section-container {
   overflow: hidden;
   position: relative;
@@ -941,8 +968,8 @@ body {
 .section-container .ico {
   position: absolute;
   z-index: -1;
-  right: -30%;
-  top: 10%;
+  left: -40%;
+  top: 0%;
 }
 
 .section-container .ico.ico2 {
@@ -983,40 +1010,27 @@ body {
   }
 }
 
+.section-container .premios .right h2 {
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 850px) {
+  .section-container .premios .right h2 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+}
+
 .section-container .premios .right > p {
   max-width: 560px;
 }
 
+.section-container .premios .right > p:nth-child(4) {
+  margin-top: 25px;
+}
+
 .section-container .premios .right p, .section-container .premios .right h2 {
-  color: #ffffff;
-}
-
-@media screen and (max-width: 850px) {
-  .section-container .premios .right p, .section-container .premios .right h2 {
-    color: #1D1D1B;
-  }
-}
-
-.section-container .premios .right .bottom {
-  margin-top: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-}
-
-.section-container .premios .right .bottom > div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section-container .premios .right .bottom > div h2 {
-  margin-right: 25px;
-}
-
-.section-container .premios .right .bottom > div p {
-  max-width: 200px;
+  color: #1D1D1B;
 }
 
 .section-container .team {
@@ -1053,7 +1067,7 @@ body {
   .section-container .team .team-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 5.55556%;
+    padding: 5.55556%;
   }
 }
 
@@ -1421,7 +1435,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: #1D1D1B;
+  background-color: #223869;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1430,6 +1444,21 @@ footer {
           align-items: center;
   padding: 50px;
   position: relative;
+}
+
+@media screen and (max-width: 850px) {
+  footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer > div {
+    margin-bottom: 25px;
+  }
 }
 
 footer p {
@@ -1446,21 +1475,24 @@ footer .left {
   width: 50%;
 }
 
+@media screen and (max-width: 850px) {
+  footer .left {
+    width: 100%;
+  }
+}
+
 footer .right {
   width: 50%;
 }
 
+@media screen and (max-width: 850px) {
+  footer .right {
+    width: 100%;
+  }
+}
+
 footer .redes {
   width: 90px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: absolute;
-  right: 5%;
-  bottom: 5%;
 }
 
 footer .redes .red {
