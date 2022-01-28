@@ -27,6 +27,17 @@ $('.slider-projects').slick({
   nextArrow: $('.next')
 });
 
+$('.slider-logos').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 2500,
+  pauseOnHover:false
+});
+
+
 $('.burguer').click(function () {
   $('.menu').toggleClass('active');
   $('.burguer').toggleClass('active');
@@ -57,7 +68,7 @@ $content =  $('#inner');
 $('#inner a').hover(function () {
     onHover = $(this).data('hover');
     $content.removeClass();
-    $content.addClass(onHover);     
+    $content.addClass(onHover);
 });
 
 
@@ -89,13 +100,13 @@ let tmline = gsap.timeline({
   }
 });
 
-tmline.from(".icon",{ 
-  opacity:0, 
+tmline.from(".icon",{
+  opacity:0,
   scale:0,
   duration: .8
 });
 
-tmline.from(".puntos",{ 
+tmline.from(".puntos",{
   rotation:"360",
   transformOrigin: '50% 50%',
   repeat:-1,
@@ -119,8 +130,8 @@ let test = gsap.timeline({
   }
 });
 
-test.from(".test",{ 
-  opacity:0, 
+test.from(".test",{
+  opacity:0,
   scale:0,
   duration: .8
 });
@@ -145,7 +156,7 @@ let masks = document.querySelectorAll('.mask');
     tl.set(mask, {autoAlpha:1});
 
 
-    tl.fromTo(mask,1, { 
+    tl.fromTo(mask,1, {
       clipPath: "inset(100% 0% 0% 0%)"},{ clipPath: "inset(0% 0% 0% 0%)", //hay que usar porcentajes en los ceros también
       duration: 1,
       ease: Power3.easeOut,
@@ -159,11 +170,11 @@ let masks = document.querySelectorAll('.mask');
 
   })
 
- /*  
+ /*
   gsap.fromTo(".reveal", { clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"},{ clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",duration:1,ease: easeInOut,
     scrollTrigger:{
       trigger: ".contacto",
-      toggleActions:"restart restart none none" 
+      toggleActions:"restart restart none none"
     },
     ease: Power3.Out,
   }); */
@@ -172,9 +183,9 @@ let masks = document.querySelectorAll('.mask');
 
   const textos = gsap.utils.toArray('.text');
   textos.forEach(text => {
-    gsap.from(text, { 
+    gsap.from(text, {
       opacity:0,
-      y:-50, 
+      y:-50,
       delay:.3,
       ease: Expo.easeOut,
       duration: 1,
@@ -187,11 +198,11 @@ let masks = document.querySelectorAll('.mask');
     })
   });
 
-  
+
 
   const cuadros = gsap.utils.toArray('.cuadroazul');
   cuadros.forEach(cuadro => {
-    gsap.from(cuadro, { 
+    gsap.from(cuadro, {
       opacity:0,
       y:-100,
       //delay:.3,
@@ -220,8 +231,8 @@ let masks = document.querySelectorAll('.mask');
         //markers:true
     }
   })
-  
-  
+
+
 
   $(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
@@ -233,6 +244,6 @@ let masks = document.querySelectorAll('.mask');
 
 $(".item").click(function () {
   $(".item").removeClass("active");
-  
-  $(this).addClass("active");   
+
+  $(this).addClass("active");
 });
