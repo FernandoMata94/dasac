@@ -1168,7 +1168,7 @@ body {
 
 .section-container .team .team-container .person .img-container .show {
   position: absolute;
-  padding: 15px;
+  padding: 10px;
   left: 0;
   top: 0;
   opacity: 0;
@@ -1193,6 +1193,20 @@ body {
   color: #ffffff;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.section-container .team .team-container .person .img-container .show p {
+  font-family: "avenir";
+  font-size: 1.0125rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.section-container .team .team-container .person .img-container .show h3:last-of-type {
+  margin-top: 5px;
 }
 
 .section-container .team .team-container .person:hover .show {
