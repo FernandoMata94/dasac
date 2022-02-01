@@ -549,6 +549,14 @@ body {
   left: 5.555%;
 }
 
+@media screen and (max-width: 1600px) {
+  .proyectos h2 {
+    position: initial;
+    margin-bottom: 25px;
+    margin-left: 5.55556%;
+  }
+}
+
 .proyectos .container {
   position: absolute;
   top: 20%;
@@ -1100,13 +1108,13 @@ body {
 }
 
 .section-container .team {
-  width: 77.77778%;
+  width: 88.88889%;
   margin: 150px auto 0 auto;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section-container .team {
-    width: 100%;
+    width: 88.88889%;
   }
 }
 
@@ -1129,11 +1137,18 @@ body {
   padding-bottom: 22.22222%;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1200px) {
   .section-container .team .team-container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding: 5.55556%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section-container .team .team-container {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -1153,6 +1168,7 @@ body {
 
 .section-container .team .team-container .person .img-container .show {
   position: absolute;
+  padding: 15px;
   left: 0;
   top: 0;
   opacity: 0;
@@ -1176,6 +1192,7 @@ body {
 .section-container .team .team-container .person .img-container .show h3, .section-container .team .team-container .person .img-container .show p {
   color: #ffffff;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .section-container .team .team-container .person:hover .show {

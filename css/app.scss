@@ -487,6 +487,11 @@ body {
     position: absolute;
     top: 10%;
     left: 5.555%;
+    @media screen and (max-width: $max) {
+      position: initial;
+      margin-bottom: 25px;
+      margin-left:col(1);
+    }
   }
   .container{
     position: absolute;
@@ -859,10 +864,10 @@ body {
   }
 
   .team{
-    width: col(14);
+    width: col(16);
     margin: 150px auto 0 auto;
-    @media screen and (max-width: $md) {
-      width: col(18);
+    @media screen and (max-width: $lg) {
+      width: col(16);
     }
     .texto{
       text-align: center;
@@ -878,9 +883,13 @@ body {
       grid-gap: 50px;
       grid-template-columns: repeat(3, 1fr);
       padding-bottom: col(4);
-      @media screen and (max-width: $md) {
+      @media screen and (max-width: $lg) {
         grid-template-columns: repeat(2, 1fr);
         padding: col(1);
+      }
+      @media screen and (max-width: $md) {
+        grid-template-columns: repeat(1, 1fr);
+
       }
       .person{
         cursor: pointer;
@@ -892,6 +901,7 @@ body {
           position: relative;
           .show{
             position: absolute;
+            padding: 15px;
             left: 0;
             top: 0;
             opacity: 0;
@@ -906,6 +916,10 @@ body {
             h3,p{
               color: $white;
               text-align: center;
+              margin-bottom: 10px;
+            }
+            h3{
+
             }
           }
         }
