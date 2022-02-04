@@ -17,15 +17,40 @@ $('.slider-serv').slick({
   dots:true
 });
 
-$('.slider-projects').slick({
+
+
+var slickOptions = {
   infinite: true,
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows:true,
   fade: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
   prevArrow: $('.prev'),
-  nextArrow: $('.next')
+  nextArrow: $('.next'),
+ 
+},
+$slick = $('.slider-projects');
+
+$slick.slick(slickOptions);
+
+// built-in feature, for more info check the [doc](http://kenwheeler.github.io/slick/)
+$slick.on('swipe', function(event, slick, direction) {
+reinitSlick();
 });
+
+$('.slick-prev, .slick-next').on('click', function(){
+reinitSlick();
+});
+
+var reinitSlick = function() {
+$slick.slick('slickSetOption', {
+'autoplay': false
+}, false);
+}
+
+
 
 $('.slider-logos').slick({
   infinite: true,

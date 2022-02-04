@@ -1232,6 +1232,11 @@ body {
   margin-bottom: 50px;
 }
 
+.vinculacion .slider-logos {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
 .vinculacion .slider-logos img {
   margin: auto;
 }
